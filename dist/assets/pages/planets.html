@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/dist/assets/css/style.css" />
+    <link rel="stylesheet" href="/dist/assets/css/planets.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+     <video autoplay muted loop class="background-video">
+      <source src="./../../src/assets/video/SpaceVideo.mp4" type="video/mp4" />
+    </video>
+    <header>
+      <span>
+        <h1 class="header_title">Planets</h1>
+      </span>
+    </header>
+    <main>
+      <div class="back-button">
+        <a href="../../index.html" class="back-link">Back to Home</a>
+      </div>
+      <div class="planets-container">
+        <form class="search-form" id="search-form">
+            <label for="search" class="search-label">Search for a planet:</label>
+            <input type="text" id="search" name="search" placeholder="Enter name or ID" class="search-input" />
+            <button type="submit" id="search-button">Search</button>
+            
+        </form>
+        <error class="error-message"></error>
+        <div class="planets-list">
+            <div class="planet-card">
+                <ul class="planet-details">
+                  
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/dist/assets/js/planets.js"></script>
+  </body>
+</html>
