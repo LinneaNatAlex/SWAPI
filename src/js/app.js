@@ -1,0 +1,1 @@
+renderPeople(data.results);
